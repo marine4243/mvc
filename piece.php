@@ -16,9 +16,9 @@ function newPiece( $nom, $longueur, $largeur){
    $largeur > 0
    ) {
 
-   $piece["piece"] = $nom,
-   $piece["longueur"] = $longueur,
-   $piece["largeur"] = $largeur,
+   $piece["piece"] = $nom;
+   $piece["longueur"] = $longueur;
+   $piece["largeur"] = $largeur;
    $piece["surface"] = calculSurface( $longueur, $largeur );
  } else {
 

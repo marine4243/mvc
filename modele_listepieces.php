@@ -2,9 +2,9 @@
 
 function createListePieces($piece){
 
-  $global $listePieces;
+  global $listepieces;
 
-  $listePieces[] = $piece;
+  $listepieces[] = $piece;
 }
 
 function readListePieces(){

@@ -4,7 +4,7 @@ function vue_listePieces( $listePieces){
 
   afficheEntete();
 
-  foreach ($listePieces as $key => $value) {
+  foreach ( $listePieces as $key => $value ) {
 
   afficheLigne($value);
   }
