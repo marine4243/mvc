@@ -6,7 +6,7 @@ require_once("modele_listepieces.php");
 
 
 $listepieces = [];
-createlistePieces(newPiece("salle de bain", 5, 3));
-createlistePieces(newPiece("sallon", 7, 8));
+createListePieces(newPiece("salle de bain", 5, 3));
+createListePieces(newPiece("sallon", 7, 8));
 
 vue_listePieces( $listepieces );
