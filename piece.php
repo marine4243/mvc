@@ -1,3 +1,36 @@
 <?php
 
- function newPiecec( $nom, $longueur, $largeur )
+function newPiece( $nom, $longueur, $largeur){
+
+ $piece = [];
+
+ if (
+   isset( $nom, $longueur, $largeur)&&
+   is_string($nom) &&
+   is_numeric($longueur) &&
+   is_numeric($largeur)&&
+   $nom != "" &&
+   $longueur < 20 &&
+   $longueur > 0 &&
+   $largeur < 20 &&
+   $largeur > 0
+   ) {
+
+   $piece["piece"] = $nom,
+   $piece["longueur"] = $longueur,
+   $piece["largeur"] = $largeur,
+   $piece["surface"] = calculSurface( $longueur, $largeur );
+ } else {
+
+   echo "Erreur fonction newpiece() parametres incorrects\n";
+}
+
+return($piece);
+
+}
+
+function calculSurface( $long, $larg){
+ $surface = $long * $larg;
+
+ return($surface);
+}
